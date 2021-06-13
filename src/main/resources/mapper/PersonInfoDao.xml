@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hong.dao.PersonInfoDao">
+    <select id="getPersonInfo" resultType="com.hong.entity.PersonInfo" parameterType="String">
+        select user_id,user_name,password
+        from tb_person_info
+        where user_name = #{userName}
+    </select>
+
+</mapper>
