@@ -212,5 +212,11 @@ View层主要负责前台JSP页面的表示
 
 ### 2.前端页面编写
 
+### 3.部署服务器
 
+```
+  <Context path="/myo2o_war" docBase="myo2o_war" debug="0" privileged="true"/>
+	<Context path="/upload" docBase="/home/xiangze/image/upload" reloadable="true"/>
+
+```
 
